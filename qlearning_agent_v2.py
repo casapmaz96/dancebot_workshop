@@ -21,7 +21,7 @@ class QLearningAgent():
         - self.getLegalActions(state)
           which returns legal actions for a state
     """
-    def __init__(self, epsilon=0.3, alpha=0, gamma=0.8):
+    def __init__(self, epsilon=0.3, alpha=0.3, gamma=0):
         "You can initialize Q-values here..."
         num_states = len(DANCES)**2
         num_actions = len(DANCES)
