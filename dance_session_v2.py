@@ -17,7 +17,7 @@ class DanceSession:
         self.danceReward = dance_reward
 
         self.repeated = False
-    def run(self, counts, keypoints, robot):
+    def run(self, counts, keypoints, robot, debug = False):
         """
         Main control loop for game play.
         """
@@ -50,8 +50,10 @@ class DanceSession:
         # Execute the action
         # aka. robot. perform action
         #self.executeAction(action)
-
-        self.executeAction(action, robot)
+        if debug:
+            print(action)
+        else:
+            self.executeAction(action, robot)
 
         # Allow for game specific conditions (winning, losing, etc.)
         # aka. update predance/postdance, prevstate/action, reset sesh
