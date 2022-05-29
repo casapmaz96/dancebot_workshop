@@ -1,5 +1,5 @@
 #!/bin/sh
-
+init 3
 busybox devmem 0x700031fc 32 0x45
 busybox devmem 0x6000d504 32 0x2
 busybox devmem 0x70003248 32 0x46
