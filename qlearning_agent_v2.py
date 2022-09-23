@@ -1,6 +1,15 @@
 import random, math
 import numpy as np
 
+# This code uses parts of Berkeley University's Pacman Projects: http://ai.berkeley.edu/reinforcement.html
+## Attribution Information: The Pacman AI projects were developed at UC Berkeley.
+## The core projects and autograders were primarily created by John DeNero
+## (denero@cs.berkeley.edu) and Dan Klein (klein@cs.berkeley.edu).
+## Student side autograding was added by Brad Miller, Nick Hay, and
+## Pieter Abbeel (pabbeel@cs.berkeley.edu).
+
+
+
 DANCES =[0, 1, 2, 3] #do nothing, wiggle, left moonwalk, right moonwalk
 #LOCATIONS = [0, 1] #in frame, out of frame
 
