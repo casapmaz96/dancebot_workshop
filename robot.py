@@ -159,21 +159,21 @@ class Robot():
 			self._stop()
 			time.sleep(0.3)
 
-	def right(self):
+	def right(self, speed=1):
 		self._right()
-		time.sleep(1)
+		time.sleep(speed)
 		self._stop()
-	def left(self):
+	def left(self, speed=1):
 		self._left()
-		time.sleep(1)
+		time.sleep(speed)
 		self._stop()
-	def backward(self):
+	def backward(self, speed=1):
 		self._backward()
-		time.sleep(1)
+		time.sleep(speed)
 		self._stop()
-	def forward(self):
+	def forward(self, speed=1):
 		self._forward()
-		time.sleep(1)
+		time.sleep(speed)
 		self._stop()
 	def stop(self):
 		self._stop()
